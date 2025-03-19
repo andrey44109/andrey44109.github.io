@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профессиональная нутрициология | Ваше здоровье начинается здесь</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* Навигация */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Секции */
+        section {
+            padding: 100px 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Первый блок */
+        #hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://example.com/nutritionist-photo.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* Второй блок */
+        #about {
+            background: #f9f9f9;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        /* Третий блок - пакеты */
+        #packages {
+            background: #fff;
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .package-card {
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Четвертый блок */
+        #contact {
+            background: #f4f4f4;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .about-content, .packages-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#hero">Главная</a></li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#packages">Пакеты</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Профессиональное сопровождение в области нутрициологии</h1>
+            <p>Персональный подход к вашему здоровью и питанию</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <div>
+                    <h2>О моей работе</h2>
+                    <p>Консультирование по вопросам питания, коррекции хронических состояний и дефицитов — это процесс, в ходе которого оценивается ваш обычный образ жизни, потребление пищи и определяются области, в которых необходимы изменения.</p>
+                </div>
+                <div>
+                    <h3>Что вы получаете:</h3>
+                    <ul>
+                        <li>Анализ текущего состояния здоровья</li>
+                        <li>Индивидуальную стратегию питания</li>
+                        <li>План коррекции дефицитов</li>
+                        <li>Постоянную поддержку</li>
+                        <li>Психологическое сопровождение</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages">
+        <div class="container">
+            <h2>Пакеты услуг</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <h3>Стартовый</h3>
+                    <p>Первичная консультация</p>
+                    <p>Анализ питания</p>
+                    <p>Рекомендации</p>
+                    <p>₽5 000</p>
+                </div>
+                <!-- Добавьте остальные 3 пакета аналогичным образом -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-form">
+                <h2>Начните свой путь к здоровью</h2>
+                <form>
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+                    <button type="submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
